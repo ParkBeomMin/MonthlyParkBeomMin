@@ -10,6 +10,10 @@ a {
   transition: 0.4s;
 }
 
+a.black {
+  color: black;
+}
+
 ul,
 li {
   padding: 0px;
@@ -33,5 +37,8 @@ li {
 @media (hover: hover) {
   a:hover {
     background-color: hsla(199, 100%, 37%, 0.2);
+  }
+  a.no-bg {
+    background: none;
   }
 }

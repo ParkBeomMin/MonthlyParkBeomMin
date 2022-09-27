@@ -10,6 +10,26 @@ a {
   transition: 0.4s;
 }
 
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  justify-content: center;
+}
+
+.bottom-line {
+  border-bottom: 0.5px solid #b8b8c7;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(199, 100%, 37%, 0.2);

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import Header from "./components/Header.vue";
-import Gnb from "./components/Gnb.vue";
+import Header from "@/components/Header.vue";
+import Gnb from "@/components/Gnb.vue";
 </script>
 
 <template>

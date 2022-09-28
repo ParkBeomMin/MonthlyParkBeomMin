@@ -12,11 +12,14 @@ import Gnb from "@/components/Gnb.vue";
     </router-link>
   </div>
   <Gnb />
-  <RouterView />
+  <RouterView class="container" />
 </template>
 
 <style scoped>
 .title {
   padding: 36px;
+}
+.container {
+  padding: 32px 128px;
 }
 </style>

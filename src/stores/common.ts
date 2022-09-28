@@ -3,9 +3,10 @@ import { defineStore } from "pinia";
 
 export const useCommonStore = defineStore("common", () => {
   const menuList = ref([
-    { code: "0001", name: "About", path: "/about" },
-    { code: "0101", name: "월간 박범민" },
-    { code: "0201", name: "Contact", path: "/contact" },
+    { code: "01", name: "About", path: "/about" },
+    { code: "02", name: "월간 박범민" },
+    { code: "0201", name: "이달의 아이디어", path: "/" },
+    { code: "03", name: "Contact", path: "/contact" },
   ]);
   const goTo = (des: String) => {
     if (des == "instagram") {

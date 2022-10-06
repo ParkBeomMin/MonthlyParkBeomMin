@@ -3,7 +3,7 @@
     <p class="title">
       {{ title }}
     </p>
-    <p class="contents">{{ contents }}</p>
+    <p class="contents">{{ content }}</p>
   </div>
 </template>
 
@@ -11,17 +11,17 @@
 import { defineProps } from "vue";
 interface Props {
   title: string;
-  contents: string;
+  content: string;
 }
 const props = defineProps<Props>();
 </script>
 
 <style scoped>
 .container {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 .title {
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 </style>

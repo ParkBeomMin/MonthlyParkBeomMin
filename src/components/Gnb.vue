@@ -15,6 +15,7 @@
             <li
               v-for="subMenu in depth2MenuList"
               :key="`sub-menu-${menu.code}-${subMenu.code}`"
+              class="bottom-line"
             >
               <router-link :to="subMenu.path">
                 {{ subMenu.name }}
@@ -60,10 +61,15 @@ const setShowSubMenu = (isOpen: boolean) => {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  border: 1px solid #b8b8c7;
+  border: 0.5px solid #b8b8c7;
   background-color: white;
-  padding: 8px;
-  width: 120px;
+  padding: 16px;
+  width: 140px;
   z-index: 1;
+}
+
+.sub-menu-container > li {
+  margin: 8px 0px;
+  padding-bottom: 4px;
 }
 </style>

@@ -15,3 +15,8 @@ export const aboutContents = [
     꾸준한 작은 움직임으로 목표를 실천해나가겠습니다.`,
   },
 ];
+
+export const contacts = {
+  email: "club20608@gmail.com",
+  phone: "010-2434-7280",
+};

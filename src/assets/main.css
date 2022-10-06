@@ -34,6 +34,25 @@ li {
   border-bottom: 0.5px solid #b8b8c7;
 }
 
+.view-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.view-title:after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background: black;
+  margin: 1rem auto 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(199, 100%, 37%, 0.2);

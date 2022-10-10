@@ -6,7 +6,7 @@ export const useCommonStore = defineStore("common", () => {
   const menuList = ref([
     { code: "01", name: "About", path: "/about" },
     { code: "02", name: "월간 박범민" },
-    { code: "0201", name: "이달의 아이디어", path: "/" },
+    { code: "0201", name: "이달의 아이디어", path: "/monthly-idea" },
     { code: "0202", name: "이달의 아이디어", path: "/" },
     { code: "03", name: "Contact", path: "/contact" },
   ]);

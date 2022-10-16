@@ -8,7 +8,7 @@ import Gnb from "@/components/Gnb.vue";
   <Header />
   <div class="title horizontal-container center bottom-line">
     <router-link class="black no-bg" to="/">
-      <h1>월간 박범민</h1>
+      <h1>月刊 朴範民</h1>
     </router-link>
   </div>
   <Gnb />

@@ -31,7 +31,15 @@ const router = createRouter({
       // route level code-splittingg
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/MonthlyIdea.vue"),
+      component: () => import("@/views/MonthlyIdea/index.vue"),
+    },
+    {
+      path: "/monthly-idea/:id",
+      name: "monthly-idea-detail",
+      // route level code-splittingg
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("@/views/MonthlyIdea/_id.vue"),
     },
   ],
 });

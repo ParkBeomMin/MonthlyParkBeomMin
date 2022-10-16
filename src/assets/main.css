@@ -53,6 +53,17 @@ li {
   height: 24px;
 }
 
+.category:before {
+  vertical-align: middle;
+  display: inline-block;
+  content: "";
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  height: 1px;
+  background: #eceeef;
+  background: #a0a0a0;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(199, 100%, 37%, 0.2);

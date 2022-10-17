@@ -12,8 +12,9 @@ export const useCommonStore = defineStore("common", () => {
   ]);
   const goTo = (des: string) => {
     if (des == "instagram") {
-      //TODO 인스타링크로 보내기
-      console.log(1);
+      window.open("https://www.instagram.com/beomm.in/");
+    } else if (des == "velog") {
+      window.open("https://velog.io/@bmpark");
     } else if (des == "email") {
       window.location.href = `mailto:${contacts.email}`;
     } else if (des == "phone") {

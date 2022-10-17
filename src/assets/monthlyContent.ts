@@ -11,8 +11,16 @@ export const monthlyContents: Array<MonthlyContent> = [
   {
     year: 2022,
     month: 10,
-    category: "test category",
-    title: "test",
+    category: "idea",
+    title: "test idea",
+    purpose: "test purpose",
+    content: "test content",
+  },
+  {
+    year: 2022,
+    month: 10,
+    category: "result",
+    title: "test result",
     purpose: "test purpose",
     content: "test content",
   },

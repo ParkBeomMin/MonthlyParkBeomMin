@@ -15,9 +15,8 @@
 import { useRoute } from "vue-router";
 import { monthlyContents } from "@/assets/monthlyContent.ts";
 const route = useRoute();
-console.log(route.params);
-const monthlyIdeas = monthlyContents.filter((mc) => mc.category == "idea");
-const item = monthlyIdeas[route.params.id];
+const monthlyResults = monthlyContents.filter((mc) => mc.category == "result");
+const item = monthlyResults[route.params.id];
 </script>
 
 <style scoped>

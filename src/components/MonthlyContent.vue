@@ -18,7 +18,7 @@ interface Props {
 }
 
 const props = defineProps<Props>();
-const url = computed(() => `/monthly-idea/${props.id}`);
+const url = computed(() => `/monthly-${props.category}/${props.id}`);
 </script>
 
 <style scoped>

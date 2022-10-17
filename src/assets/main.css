@@ -6,7 +6,7 @@
 
 a {
   text-decoration: none;
-  color: hsla(199, 100%, 37%, 1);
+  color: #000000;
   transition: 0.4s;
 }
 
@@ -66,7 +66,7 @@ li {
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(199, 100%, 37%, 0.2);
+    color: #a0a0a0;
   }
   a.no-bg {
     background: none;

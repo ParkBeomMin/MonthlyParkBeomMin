@@ -41,6 +41,22 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("@/views/MonthlyIdea/_id.vue"),
     },
+    {
+      path: "/monthly-result",
+      name: "monthly-result",
+      // route level code-splittingg
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("@/views/MonthlyResult/index.vue"),
+    },
+    {
+      path: "/monthly-result/:id",
+      name: "monthly-result-detail",
+      // route level code-splittingg
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("@/views/MonthlyResult/_id.vue"),
+    },
   ],
 });
 

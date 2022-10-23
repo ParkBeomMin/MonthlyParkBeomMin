@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
-
 <template>
-  <main></main>
+  <div>
+    <banner />
+  </div>
 </template>
+
+<script setup lang="ts">
+import Banner from "@/components/Banner.vue";
+</script>

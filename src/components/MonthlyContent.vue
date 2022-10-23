@@ -23,6 +23,7 @@ const url = computed(() => `/monthly-${props.category}/${props.id}`);
 
 <style scoped>
 .container {
+  width: 100%;
   border: 1px solid #a0a0a0;
   display: flex;
   justify-content: center;

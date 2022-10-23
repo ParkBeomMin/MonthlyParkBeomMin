@@ -5,7 +5,7 @@
       v-for="(result, i) in monthlyResults"
       :key="`monthly-result-${i}`"
       :title="result.title"
-      :category="result.category"
+      :category="result.category.name"
       :id="i"
     />
   </div>
@@ -14,5 +14,7 @@
 <script setup lang="ts">
 import MonthlyContent from "@/components/MonthlyContent.vue";
 import { monthlyContents } from "@/assets/monthlyContent.ts";
-const monthlyResults = monthlyContents.filter((mc) => mc.category == "result");
+const monthlyResults = monthlyContents.filter(
+  (mc) => mc.category.code == "0002"
+);
 </script>

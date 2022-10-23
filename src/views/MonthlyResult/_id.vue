@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="container-header">
-      <span class="category">{{ item.category }}</span>
+      <span class="category">{{ item.category.name }}</span>
       <h1 class="view-title">{{ item.title }}</h1>
     </div>
     <span class="label">목적</span>
@@ -15,7 +15,9 @@
 import { useRoute } from "vue-router";
 import { monthlyContents } from "@/assets/monthlyContent.ts";
 const route = useRoute();
-const monthlyResults = monthlyContents.filter((mc) => mc.category == "result");
+const monthlyResults = monthlyContents.filter(
+  (mc) => mc.category.code == "0002"
+);
 const item = monthlyResults[route.params.id];
 </script>
 

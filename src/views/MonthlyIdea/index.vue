@@ -5,7 +5,7 @@
       v-for="(idea, i) in monthlyIdeas"
       :key="`monthly-idea-${i}`"
       :title="idea.title"
-      :category="idea.category"
+      :category="idea.category.name"
       :id="i"
     />
   </div>
@@ -14,5 +14,5 @@
 <script setup lang="ts">
 import MonthlyContent from "@/components/MonthlyContent.vue";
 import { monthlyContents } from "@/assets/monthlyContent.ts";
-const monthlyIdeas = monthlyContents.filter((mc) => mc.category == "idea");
+const monthlyIdeas = monthlyContents.filter((mc) => mc.category.code == "0001");
 </script>

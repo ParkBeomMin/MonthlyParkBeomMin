@@ -65,7 +65,7 @@ const setShowSubMenu = (isOpen: boolean) => {
   background-color: white;
   padding: 16px;
   width: 140px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sub-menu-container > li {

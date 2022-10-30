@@ -7,7 +7,7 @@
     <span class="label">목적</span>
     <p class="purpose">{{ item.purpose }}</p>
     <span class="label">내용</span>
-    <p>{{ item.content }}</p>
+    <p v-html="item.content"></p>
   </div>
 </template>
 
